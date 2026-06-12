@@ -76,13 +76,6 @@ export default function Terminal() {
           type: 'output'
         });
         break;
-        case 'Iloveyou':
-        newLines.push({
-          id: Math.random().toString(),
-          text: 'I love you to baal! 🥹❤️',
-          type: 'output'
-        });
-        break;
       case 'clear':
         setHistory([]);
         setInput('');
