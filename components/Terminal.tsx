@@ -79,7 +79,7 @@ export default function Terminal() {
         case 'I love you':
         newLines.push({
           id: Math.random().toString(),
-          text: 'I love you to baallly! 🥹❤️',
+          text: 'I love you to baal! 🥹❤️',
           type: 'output'
         });
         break;
