@@ -507,35 +507,39 @@ export default function Home() {
       <section id="about">
         <div className="section-label">01 — About</div>
         <h2 className="section-title">Crafted from <em>curiosity</em></h2>
-        <div className="about-grid">
-          <div className="about-photo-wrapper">
-            <img src="/profile.jpg" alt="Pranav A. Thormise" className="about-photo" />
-          </div>
-          <div>
-            <div className="about-keywords">
-              <span className="keyword-badge">Full Stack Developer</span>
-              <span className="keyword-badge">UI/UX Designer</span>
-              <span className="keyword-badge">Startup Founder</span>
-              <span className="keyword-badge">AI-ML Explorer</span>
+        <div className="about-container">
+          <div className="about-main-row">
+            <div className="about-photo-side">
+              <div className="about-photo-wrapper">
+                <img src="/profile.jpg" alt="Pranav A. Thormise" className="about-photo" />
+              </div>
             </div>
-            <p className="about-text">
-              I'm <strong>Pranav A. Thormise</strong>, a TE Computer Engineering student at PVGCOE, Nashik —
-              a full-stack developer and UI/UX designer who builds things that <strong>feel alive</strong>.
-            </p>
-            <p className="about-text" style={{ marginTop: '1rem' }}>
-              My work sits at the intersection of <strong>engineering and aesthetics</strong>. I care about clean code and
-              even cleaner interfaces. From AI pipelines to sleek mobile apps, I bring both depth and polish.
-            </p>
-            <p className="about-text" style={{ marginTop: '1rem' }}>
-              Currently exploring <strong>AI-ML</strong>, vibe coding, and the idea that every product should feel like it was built by someone who genuinely cared.
-            </p>
-            <div className="about-links">
-              <a href="https://github.com/WolverineAryan" className="about-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-              <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-              <a href="mailto:pranavthormise@gmail.com" className="about-link">Email ↗</a>
+            <div className="about-info-side">
+              <div className="about-keywords">
+                <span className="keyword-badge">Full Stack Developer</span>
+                <span className="keyword-badge">UI/UX Designer</span>
+                <span className="keyword-badge">Startup Founder</span>
+                <span className="keyword-badge">AI-ML Explorer</span>
+              </div>
+              <p className="about-text">
+                I'm <strong>Pranav A. Thormise</strong>, a TE Computer Engineering student at PVGCOE, Nashik —
+                a full-stack developer and UI/UX designer who builds things that <strong>feel alive</strong>.
+              </p>
+              <p className="about-text" style={{ marginTop: '1rem' }}>
+                My work sits at the intersection of <strong>engineering and aesthetics</strong>. I care about clean code and
+                even cleaner interfaces. From AI pipelines to sleek mobile apps, I bring both depth and polish.
+              </p>
+              <p className="about-text" style={{ marginTop: '1rem' }}>
+                Currently exploring <strong>AI-ML</strong>, vibe coding, and the idea that every product should feel like it was built by someone who genuinely cared.
+              </p>
+              <div className="about-links">
+                <a href="https://github.com/WolverineAryan" className="about-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="mailto:pranavthormise@gmail.com" className="about-link">Email ↗</a>
+              </div>
             </div>
           </div>
-          <div className="about-stats">
+          <div className="about-stats-row">
             <div className="stat-card">
               <div className="stat-num">3+</div>
               <div className="stat-desc">Years Building</div>
@@ -811,13 +815,12 @@ export default function Home() {
         <div className="contact-links">
           <a href="https://github.com/WolverineAryan" className="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" className="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://rekraft.in" className="contact-link" target="_blank" rel="noopener noreferrer">Rekraft</a>
-        </div>
+          </div>
       </section>
 
       <footer>
         <span>© 2026 Pranav A. Thormise</span>
-        <span>Designed &amp; Built with intent ✦</span>
+        <span>Designed &amp; Built with intent</span>
       </footer>
     </>
   );
