@@ -14,8 +14,16 @@ export default function Terminal() {
     { id: 'welcome2', text: 'Ready for connection...', type: 'output' },
   ]);
   const [input, setInput] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 900);
+    const handleResize = () => setIsMobile(window.innerWidth <= 900);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (containerRef.current) {
@@ -33,8 +41,9 @@ export default function Terminal() {
     const trimmed = cmdText.trim();
     if (!trimmed) return;
 
+    const promptStr = isMobile ? 'visitor:~$ ' : 'visitor@pranav-thormise:~$ ';
     const newLines: TerminalLine[] = [
-      { id: Math.random().toString(), text: `visitor@pranav-thormise:~$ ${trimmed}`, type: 'input' }
+      { id: Math.random().toString(), text: `${promptStr}${trimmed}`, type: 'input' }
     ];
 
     const parts = trimmed.split(' ');
@@ -178,7 +187,9 @@ export default function Terminal() {
 
         {/* Input form prompt */}
         <form onSubmit={handleSubmit} style={{ display: 'flex', alignItems: 'center' }}>
-          <span style={{ color: 'var(--red)', marginRight: '0.5rem' }}>visitor@pranav-thormise:~$</span>
+          <span style={{ color: 'var(--red)', marginRight: '0.5rem', whiteSpace: 'nowrap' }}>
+            {isMobile ? 'visitor:~$ ' : 'visitor@pranav-thormise:~$ '}
+          </span>
           <input
             ref={inputRef}
             type="text"

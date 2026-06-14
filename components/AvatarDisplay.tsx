@@ -18,8 +18,8 @@ interface AvatarDisplayProps {
 
 export default function AvatarDisplay({ scrollProgress = 1 }: AvatarDisplayProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [rotate, setRotate] = useState({ x: 0, y: 0 });
-  const [hoverScale, setHoverScale] = useState(1);
+  const rotate = { x: 0, y: 0 };
+  const hoverScale = 1;
   const [bubbleText, setBubbleText] = useState('');
   const [showBubble, setShowBubble] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
@@ -34,49 +34,6 @@ export default function AvatarDisplay({ scrollProgress = 1 }: AvatarDisplayProps
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const cardX = rect.left + rect.width / 2;
-      const cardY = rect.top + rect.height / 2;
-      
-      const mouseX = e.clientX - cardX;
-      const mouseY = e.clientY - cardY;
-      
-      const maxRotation = 12;
-      const rx = -(mouseY / (window.innerHeight / 2)) * maxRotation;
-      const ry = (mouseX / (window.innerWidth / 2)) * maxRotation;
-      
-      setRotate({ x: rx, y: ry });
-    };
-
-    const handleMouseLeave = () => {
-      setRotate({ x: 0, y: 0 });
-      setHoverScale(1);
-    };
-
-    const handleMouseEnter = () => {
-      setHoverScale(1.05);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove, { passive: true });
-    
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('mouseleave', handleMouseLeave);
-      container.addEventListener('mouseenter', handleMouseEnter);
-    }
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      if (container) {
-        container.removeEventListener('mouseleave', handleMouseLeave);
-        container.removeEventListener('mouseenter', handleMouseEnter);
-      }
-    };
   }, []);
 
   const handleClick = () => {
@@ -105,7 +62,7 @@ export default function AvatarDisplay({ scrollProgress = 1 }: AvatarDisplayProps
   const avatarProgress = Math.min(1, scrollProgress / 0.5);
   const tx = isMobile ? 0 : (1 - avatarProgress) * -25; // in vw
   const ty = 0; // Keep the flat cropped bottom of the image anchored to the bottom of the viewport
-  const scaleFactor = isMobile ? 1.15 + (1 - avatarProgress) * 0.35 : 1.25 + (1 - avatarProgress) * 0.45; // scale factor
+  const scaleFactor = isMobile ? 1.05 + (1 - avatarProgress) * 0.15 : 1.25 + (1 - avatarProgress) * 0.45; // scale factor
 
   return (
     <div 
@@ -115,20 +72,27 @@ export default function AvatarDisplay({ scrollProgress = 1 }: AvatarDisplayProps
       style={{
         perspective: '10000px',
         width: '100%',
-        maxWidth: '520px',
-        height: '100%',
-        minHeight: '75vh',
+        maxWidth: isMobile ? '290px' : '520px',
+        height: isMobile ? '62vh' : '100%',
+        minHeight: isMobile ? 'auto' : '75vh',
         margin: '0 auto',
         display: 'flex',
         alignItems: 'flex-end',
         justifyContent: 'center',
-        zIndex: 5,
-        position: 'relative',
+        zIndex: isMobile ? 1 : 5,
+        position: isMobile ? 'absolute' : 'relative',
+        bottom: isMobile ? 0 : 'auto',
+        left: isMobile ? '50%' : 'auto',
+        opacity: isMobile ? 1 - scrollProgress * 0.75 : 1,
+        pointerEvents: isMobile && scrollProgress > 0.15 ? 'none' : 'auto',
         cursor: 'pointer',
         // Scroll-linked translate and scale
-        transform: `translate(${tx}vw, ${ty}vh) scale(${scaleFactor})`,
-        transformOrigin: isMobile ? 'bottom center' : 'bottom center',
+        transform: isMobile 
+          ? `translateX(-50%) scale(${scaleFactor})` 
+          : `translate(${tx}vw, ${ty}vh) scale(${scaleFactor})`,
+        transformOrigin: 'bottom center',
         willChange: 'transform',
+        transition: isMobile ? 'opacity 0.15s ease' : 'none',
       }}
     >
       {/* Outer tilt layer */}

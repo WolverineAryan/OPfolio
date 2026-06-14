@@ -158,6 +158,7 @@ export default function Home() {
     };
 
     const handleScrollSnap = () => {
+      if (window.innerWidth <= 900) return;
       const currentScroll = window.scrollY;
       const snapLimit = windowHeight * 0.75;
 
@@ -603,6 +604,9 @@ export default function Home() {
               <span className="tag">Community</span>
             </div>
           </div>
+        </div>
+        <div className="experience-avatar-container">
+          <img src="/avatar_full.png" alt="Experience Avatar" className="experience-avatar" />
         </div>
       </section>
 
