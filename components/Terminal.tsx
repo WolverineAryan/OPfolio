@@ -74,14 +74,14 @@ export default function Terminal() {
       case 'projects':
         newLines.push({
           id: Math.random().toString(),
-          text: 'RECENT PROJECTS:\n\n* Rule_Zero      - AI compliance pipeline ensuring ethical operational boundaries.\n* Smotly_ai      - Scalable AI SaaS engine designed for high production loads.\n* Groundwater    - Groundwater stewardship & hydrology platform.\n* UNI-CLUBB     - Kotlin mobile app connecting university students.',
+          text: 'RECENT PROJECTS:\n\n* Rule_Zero            - AI compliance pipeline ensuring ethical operational boundaries.\n  Live: https://rule-zero.vercel.app\n  Repo: https://github.com/WolverineAryan/rule-zero\n\n* Smotly_ai            - Scalable AI SaaS engine designed for high production loads.\n  Live: https://smotly-ai.vercel.app\n  Repo: https://github.com/WolverineAryan/smotly-ai\n\n* Groundwater          - Groundwater stewardship & hydrology platform.\n  Repo: https://github.com/WolverineAryan/groundwater-stewardship\n\n* Attendance Prediction - Student attendance prediction ML system.\n  Live: https://attendance-prediction-l5rxmkb1n-wolverinearyans-projects.vercel.app/\n  Repo: https://github.com/WolverineAryan/attendance-prediction\n\n* LEV-GRESS            - Performance-focused dynamic web platform.\n  Repo: https://github.com/WolverineAryan/lev-gress\n\n* UNI-CLUBB            - Kotlin mobile app connecting university students.\n  Repo: https://github.com/WolverineAryan/uni-clubb',
           type: 'output'
         });
         break;
       case 'contact':
         newLines.push({
           id: Math.random().toString(),
-          text: 'GET IN TOUCH:\n\n* Email:    pranavthormise@gmail.com\n* LinkedIn: https://www.linkedin.com/in/pranav-thormise-78b7b12aa/\n* GitHub:   https://github.com/WolverineAryan\n* REKRAFT:  https://rekraft.in',
+          text: 'GET IN TOUCH:\n\n* Email:    pranavthormise@gmail.com\n* LinkedIn: https://www.linkedin.com/in/pranav-thormise-332206283\n* GitHub:   https://github.com/WolverineAryan\n* REKRAFT:  https://rekraft.in',
           type: 'output'
         });
         break;

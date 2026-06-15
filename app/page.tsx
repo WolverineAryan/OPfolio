@@ -53,7 +53,7 @@ const projectsData = [
       "/projects/rulezero_6.png"
     ],
     stack: ["Python", "OpenAI API", "Docker", "Node.js"],
-    demo: "#",
+    demo: "https://rule-zero.vercel.app",
     git: "https://github.com/WolverineAryan/rule-zero"
   },
   {
@@ -75,7 +75,7 @@ const projectsData = [
       "/projects/Smotly_11.png"
     ],
     stack: ["React", "Next.js", "Express", "MongoDB", "Node.js"],
-    demo: "#",
+    demo: "https://smotly-ai.vercel.app",
     git: "https://github.com/WolverineAryan/smotly-ai"
   },
   {
@@ -110,7 +110,7 @@ const projectsData = [
       "/projects/APS8.png"
     ],
     stack: ["Python", "Scikit-Learn", "Pandas", "Flask"],
-    demo: "#",
+    demo: "https://attendance-prediction-l5rxmkb1n-wolverinearyans-projects.vercel.app/",
     git: "https://github.com/WolverineAryan/attendance-prediction"
   },
   {
@@ -549,7 +549,7 @@ export default function Home() {
               </p>
               <div className="about-links">
                 <a href="https://github.com/WolverineAryan" className="about-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="https://www.linkedin.com/in/pranav-thormise-332206283" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
                 <a href="mailto:pranavthormise@gmail.com" className="about-link">Email ↗</a>
               </div>
             </div>
@@ -842,7 +842,7 @@ export default function Home() {
         <a href="mailto:pranavthormise@gmail.com" className="contact-email">pranavthormise@gmail.com</a>
         <div className="contact-links">
           <a href="https://github.com/WolverineAryan" className="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" className="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/pranav-thormise-332206283" className="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
       </section>
 
