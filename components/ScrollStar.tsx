@@ -218,6 +218,7 @@ export default function ScrollStar() {
         top: 0,
         left: 0,
         width: '100vw',
+        maxWidth: '100%',
         height: '100vh',
         pointerEvents: 'none',
         zIndex: 2,

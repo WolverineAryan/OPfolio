@@ -153,6 +153,7 @@ export default function Terminal() {
       {/* Terminal Content Screen */}
       <div
         ref={containerRef}
+        className="terminal-screen"
         style={{
           height: '320px',
           overflowY: 'auto',

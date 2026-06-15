@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useState, useRef } from 'react';
-import Cursor from '@/components/Cursor';
 import AvatarDisplay from '@/components/AvatarDisplay';
 import Terminal from '@/components/Terminal';
 import ScrollStar from '@/components/ScrollStar';
+import ProjectImageSlider from '@/components/ProjectImageSlider';
 
 const typewriterWords = ["scalable applications", "immersive experiences", "AI integration", "stellar interfaces", "highly polished code"];
 
@@ -44,7 +44,14 @@ const projectsData = [
     name: "Rule_Zero",
     type: "AI Compliance",
     desc: "An AI compliance pipeline ensuring systems operate within defined ethical and operational boundaries. Built for reliability and transparency.",
-    image: "/project_rule_zero.png",
+    images: [
+      "/projects/rulezero_1.png",
+      "/projects/rulezero_2.png",
+      "/projects/rulezero_3.png",
+      "/projects/rulezero_4.png",
+      "/projects/rulezero_5.png",
+      "/projects/rulezero_6.png"
+    ],
     stack: ["Python", "OpenAI API", "Docker", "Node.js"],
     demo: "#",
     git: "https://github.com/WolverineAryan/rule-zero"
@@ -54,7 +61,19 @@ const projectsData = [
     name: "Smotly_ai",
     type: "AI SaaS Platform",
     desc: "A full AI SaaS platform with intelligent automation, user management, and scalable inference — designed for real production loads.",
-    image: "/project_smotly_ai.png",
+    images: [
+      "/projects/Smotly_1.png",
+      "/projects/Smotly_2.png",
+      "/projects/Smotly_3.png",
+      "/projects/Smotly_4.png",
+      "/projects/Smotly_5.png",
+      "/projects/Smotly_6.png",
+      "/projects/Smotly_7.png",
+      "/projects/Smotly_8.png",
+      "/projects/Smotly_9.png",
+      "/projects/Smotly_10.png",
+      "/projects/Smotly_11.png"
+    ],
     stack: ["React", "Next.js", "Express", "MongoDB", "Node.js"],
     demo: "#",
     git: "https://github.com/WolverineAryan/smotly-ai"
@@ -64,7 +83,13 @@ const projectsData = [
     name: "Groundwater Stewardship",
     type: "Socio-Hydro Tech",
     desc: "A technology platform bridging hydrology and social impact — enabling communities to monitor and manage groundwater sustainably.",
-    image: "/project_groundwater.png",
+    images: [
+      "/projects/groundwater_1.png",
+      "/projects/groundwater_2.png",
+      "/projects/groundwater_3.png",
+      "/projects/groundwater_4.png",
+      "/projects/groundwater_5.png"
+    ],
     stack: ["React", "Leaflet GIS", "PostgreSQL", "Express", "Node.js"],
     demo: "#",
     git: "https://github.com/WolverineAryan/groundwater-stewardship"
@@ -74,7 +99,16 @@ const projectsData = [
     name: "Attendance Prediction",
     type: "AI / ML System",
     desc: "ML system that predicts student attendance patterns from historical data, helping institutions proactively address engagement issues.",
-    image: "/project_attendance.png",
+    images: [
+      "/projects/APS1.png",
+      "/projects/APS2.png",
+      "/projects/APS3.png",
+      "/projects/APS4.png",
+      "/projects/APS5.png",
+      "/projects/APS6.png",
+      "/projects/APS7.png",
+      "/projects/APS8.png"
+    ],
     stack: ["Python", "Scikit-Learn", "Pandas", "Flask"],
     demo: "#",
     git: "https://github.com/WolverineAryan/attendance-prediction"
@@ -84,7 +118,8 @@ const projectsData = [
     name: "LEV-GRESS",
     type: "Web Platform",
     desc: "A dynamic web platform built with a focus on performance and user experience, delivering clean interactions and a polished interface.",
-    image: "/project_lev_gress.png",
+    images: ["/projects/coming_soon.png"],
+    inProgress: true,
     stack: ["HTML5", "CSS3", "JavaScript", "GSAP"],
     demo: "#",
     git: "https://github.com/WolverineAryan/lev-gress"
@@ -94,7 +129,8 @@ const projectsData = [
     name: "UNI-CLUBB",
     type: "Mobile App",
     desc: "A mobile application built with Kotlin connecting university students to clubs, events, and communities — all in one place.",
-    image: "/project_uni_clubb.png",
+    images: ["/projects/coming_soon.png"],
+    inProgress: true,
     stack: ["Kotlin", "Android SDK", "Firebase", "Node.js"],
     demo: "#",
     git: "https://github.com/WolverineAryan/uni-clubb"
@@ -335,8 +371,7 @@ export default function Home() {
       {/* SCROLL-BOUND SHOOTING STAR */}
       <ScrollStar />
 
-      {/* CUSTOM CURSOR */}
-      <Cursor />
+      {/* Native Cursor Used */}
 
 
 
@@ -426,81 +461,60 @@ export default function Home() {
 
           {/* 3D AVATAR CARD WITH SCROLL PROGRESS */}
           <AvatarDisplay scrollProgress={scrollProgress} />
-
-          <div 
-            className="hero-scroll"
-            style={{
-              opacity: 1 - scrollProgress,
-              transition: 'opacity 0.2s ease',
-            }}
-          >
-            <div className="scroll-line"></div>
-            Scroll
-          </div>
-
-          <div 
-            className="hero-socials"
-            style={{
-              opacity: 1 - scrollProgress,
-              pointerEvents: scrollProgress > 0.85 ? 'none' : 'auto',
-              transition: 'opacity 0.2s ease',
-            }}
-          >
-            <a href="https://github.com/WolverineAryan" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/pranav-thormise-78b7b12aa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
         </section>
       </div>
 
       {/* MARQUEE STRIP */}
-      <div className="marquee-wrapper" aria-hidden="true">
-        {/* Row 1: left-moving */}
-        <div className="marquee-track row1">
-          <span className="marquee-item">Software Engineering</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">System Design</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Cloud Architecture</span><span className="marquee-sep dim"></span>
-          {/* duplicate for seamless loop */}
-          <span className="marquee-item">Software Engineering</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">System Design</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Cloud Architecture</span><span className="marquee-sep dim"></span>
-        </div>
-        {/* Row 2: right-moving */}
-        <div className="marquee-track row2">
-          <span className="marquee-item accent">Vibe Coding</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">REST APIs</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Product Thinking</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Database Design</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Startup Builder</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">DevOps</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Mobile Apps</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Open Source</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Performance Optimization</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Clean Code</span><span className="marquee-sep"></span>
-          {/* duplicate */}
-          <span className="marquee-item accent">Vibe Coding</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">REST APIs</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Product Thinking</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Database Design</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Startup Builder</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">DevOps</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Mobile Apps</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Open Source</span><span className="marquee-sep"></span>
-          <span className="marquee-item accent">Performance Optimization</span><span className="marquee-sep dim"></span>
-          <span className="marquee-item">Clean Code</span><span className="marquee-sep"></span>
+      <div className="marquee-container">
+        <div className="marquee-wrapper" aria-hidden="true">
+          {/* Row 1: left-moving */}
+          <div className="marquee-track row1">
+            <span className="marquee-item">Software Engineering</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">System Design</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Cloud Architecture</span><span className="marquee-sep dim"></span>
+            {/* duplicate for seamless loop */}
+            <span className="marquee-item">Software Engineering</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">System Design</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Cloud Architecture</span><span className="marquee-sep dim"></span>
+          </div>
+          {/* Row 2: right-moving */}
+          <div className="marquee-track row2">
+            <span className="marquee-item accent">Vibe Coding</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">REST APIs</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Product Thinking</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Database Design</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Startup Builder</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">DevOps</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Mobile Apps</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Open Source</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Performance Optimization</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Clean Code</span><span className="marquee-sep"></span>
+            {/* duplicate */}
+            <span className="marquee-item accent">Vibe Coding</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">REST APIs</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Product Thinking</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Database Design</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Startup Builder</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">DevOps</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Mobile Apps</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Open Source</span><span className="marquee-sep"></span>
+            <span className="marquee-item accent">Performance Optimization</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item">Clean Code</span><span className="marquee-sep"></span>
+          </div>
         </div>
       </div>
 
@@ -619,10 +633,7 @@ export default function Home() {
             <div key={idx} className={`project-row ${idx % 2 === 1 ? 'reverse' : ''}`}>
               {/* Image side */}
               <div className="project-img-side">
-                <div className="project-img-container">
-                  <img src={project.image} alt={project.name} className="project-img" />
-                  <div className="project-img-overlay"></div>
-                </div>
+                <ProjectImageSlider images={project.images} name={project.name} />
               </div>
               
               {/* Text details side */}
@@ -641,16 +652,19 @@ export default function Home() {
                 
                 {/* Links */}
                 <div className="project-links">
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="project-link-btn primary"
-                    onMouseMove={handleButtonMouseMove}
-                  >
-                    <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-                    Live Demo
-                  </a>
+                  {/* @ts-ignore */}
+                  {!project.inProgress && (
+                    <a 
+                      href={project.demo} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="project-link-btn primary"
+                      onMouseMove={handleButtonMouseMove}
+                    >
+                      <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                      Live Demo
+                    </a>
+                  )}
                   <a 
                     href={project.git} 
                     target="_blank" 
@@ -702,36 +716,45 @@ export default function Home() {
         <div className="story-layout">
           {/* Sticky nav */}
           <div className="story-nav">
-            <button 
-              className={`story-nav-item ${activeStory === 's2019' ? 'active' : ''}`}
-              onClick={() => handleStoryNavClick('s2019')}
-            >
-              2019
-            </button>
-            <button 
-              className={`story-nav-item ${activeStory === 's2021' ? 'active' : ''}`}
-              onClick={() => handleStoryNavClick('s2021')}
-            >
-              2021
-            </button>
-            <button 
-              className={`story-nav-item ${activeStory === 's2022' ? 'active' : ''}`}
-              onClick={() => handleStoryNavClick('s2022')}
-            >
-              2022
-            </button>
-            <button 
-              className={`story-nav-item ${activeStory === 's2023' ? 'active' : ''}`}
-              onClick={() => handleStoryNavClick('s2023')}
-            >
-              2023
-            </button>
-            <button 
-              className={`story-nav-item ${activeStory === 's2024' ? 'active' : ''}`}
-              onClick={() => handleStoryNavClick('s2024')}
-            >
-              2024 — Now
-            </button>
+            <div className="story-nav-buttons">
+              <button 
+                className={`story-nav-item ${activeStory === 's2019' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2019')}
+              >
+                2019
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2021' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2021')}
+              >
+                2021
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2022' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2022')}
+              >
+                2022
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2023' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2023')}
+              >
+                2023
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2024' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2024')}
+              >
+                2024 — Now
+              </button>
+            </div>
+
+            {/* Story Section Avatar Cutout */}
+            {/* 
+            <div className="story-avatar-container">
+              <img src="/2ndavatar.png" alt="Journey Avatar" className="story-avatar" />
+            </div>
+            */}
           </div>
 
           {/* Cards */}
@@ -791,6 +814,7 @@ export default function Home() {
             <div className="story-card" id="s2024">
               <div className="story-year-col">
                 <div className="story-year">2024</div>
+                <div className="story-connector"></div>
               </div>
               <div className="story-body">
                 <div className="story-phase">Chapter 05 · Building for Real</div>
