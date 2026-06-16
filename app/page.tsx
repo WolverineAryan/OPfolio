@@ -76,7 +76,7 @@ const projectsData = [
     ],
     stack: ["React", "Next.js", "Express", "MongoDB", "Node.js"],
     demo: "https://smotly-ai.vercel.app",
-    git: "https://github.com/WolverineAryan/smotly-ai"
+    git: "https://github.com/WolverineAryan/Smotly_ai"
   },
   {
     num: "03",
@@ -121,8 +121,8 @@ const projectsData = [
     images: ["/projects/coming_soon.png"],
     inProgress: true,
     stack: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-    demo: "#",
-    git: "https://github.com/WolverineAryan/lev-gress"
+    
+    git: "https://github.com/WolverineAryan/Levgress"
   },
   {
     num: "06",
@@ -132,8 +132,8 @@ const projectsData = [
     images: ["/projects/coming_soon.png"],
     inProgress: true,
     stack: ["Kotlin", "Android SDK", "Firebase", "Node.js"],
-    demo: "#",
-    git: "https://github.com/WolverineAryan/uni-clubb"
+    
+    git: "https://github.com/shreyash-leo/UniClubb"
   }
 ];
 
@@ -652,8 +652,7 @@ export default function Home() {
                 
                 {/* Links */}
                 <div className="project-links">
-                  {/* @ts-ignore */}
-                  {!project.inProgress && (
+                  {!project.inProgress && project.demo !== "#" && (
                     <a 
                       href={project.demo} 
                       target="_blank" 
