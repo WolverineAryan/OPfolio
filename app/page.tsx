@@ -52,9 +52,9 @@ const projectsData = [
       "/projects/rulezero_5.png",
       "/projects/rulezero_6.png"
     ],
-    stack: ["Python", "OpenAI API", "Docker", "Node.js"],
+    stack: ["Next.js", "Prisma", "PostgreSQL", "Firebase", "Gemini API"],
     demo: "https://rule-zero.vercel.app",
-    git: "https://github.com/WolverineAryan/rule-zero"
+    git: "https://github.com/WolverineAryan/Rule_Zero"
   },
   {
     num: "02",
@@ -74,7 +74,7 @@ const projectsData = [
       "/projects/Smotly_10.png",
       "/projects/Smotly_11.png"
     ],
-    stack: ["React", "Next.js", "Express", "MongoDB", "Node.js"],
+    stack: ["Next.js", "FastAPI", "PostgreSQL", "Celery", "Groq API"],
     demo: "https://smotly-ai.vercel.app",
     git: "https://github.com/WolverineAryan/Smotly_ai"
   },
@@ -90,9 +90,9 @@ const projectsData = [
       "/projects/groundwater_4.png",
       "/projects/groundwater_5.png"
     ],
-    stack: ["React", "Leaflet GIS", "PostgreSQL", "Express", "Node.js"],
+    stack: ["React", "Express", "MongoDB", "FastAPI", "Leaflet GIS"],
     demo: "#",
-    git: "https://github.com/WolverineAryan/groundwater-stewardship"
+    git: "https://github.com/WolverineAryan/Ground_water_stewardship"
   },
   {
     num: "04",
@@ -109,9 +109,9 @@ const projectsData = [
       "/projects/APS7.png",
       "/projects/APS8.png"
     ],
-    stack: ["Python", "Scikit-Learn", "Pandas", "Flask"],
+    stack: ["React", "Flask", "Tailwind CSS", "Scikit-Learn", "Ollama"],
     demo: "https://attendance-prediction-l5rxmkb1n-wolverinearyans-projects.vercel.app/",
-    git: "https://github.com/WolverineAryan/attendance-prediction"
+    git: "https://github.com/WolverineAryan/Attendance-Prediction"
   },
   {
     num: "05",
@@ -120,7 +120,7 @@ const projectsData = [
     desc: "A dynamic web platform built with a focus on performance and user experience, delivering clean interactions and a polished interface.",
     images: ["/projects/coming_soon.png"],
     inProgress: true,
-    stack: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+    stack: ["React", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
     
     git: "https://github.com/WolverineAryan/Levgress"
   },
@@ -131,7 +131,7 @@ const projectsData = [
     desc: "A mobile application built with Kotlin connecting university students to clubs, events, and communities — all in one place.",
     images: ["/projects/coming_soon.png"],
     inProgress: true,
-    stack: ["Kotlin", "Android SDK", "Firebase", "Node.js"],
+    stack: ["Kotlin", "Jetpack Compose", "Firebase", "Cloudinary", "Android SDK"],
     
     git: "https://github.com/shreyash-leo/UniClubb"
   }
