@@ -53,7 +53,7 @@ export default function Terminal() {
       case 'help':
         newLines.push({
           id: Math.random().toString(),
-          text: 'Available commands:\n  about    - Who is Pranav A. Thormise?\n  skills   - Lists technical skills and expertise\n  projects - Showcases recent shipped projects\n  contact  - Links for hiring, email, and social networks\n  clear    - Clears the terminal history',
+          text: 'Available commands:\n  about    - Who is Pranav A. Thormise?\n  skills   - Lists technical skills and expertise\n  projects - Showcases recent shipped projects\n  resume   - Opens/downloads Pranav\'s technical resume\n  contact  - Links for hiring, email, and social networks\n  clear    - Clears the terminal history',
           type: 'output'
         });
         break;
@@ -78,10 +78,18 @@ export default function Terminal() {
           type: 'output'
         });
         break;
+      case 'resume':
+        window.open('/pranav_resume.pdf', '_blank');
+        newLines.push({
+          id: Math.random().toString(),
+          text: 'Opening Pranav\'s Resume (pranav_resume.pdf) in a new tab...',
+          type: 'success'
+        });
+        break;
       case 'contact':
         newLines.push({
           id: Math.random().toString(),
-          text: 'GET IN TOUCH:\n\n* Email:    pranavthormise@gmail.com\n* LinkedIn: https://www.linkedin.com/in/pranav-thormise-332206283\n* GitHub:   https://github.com/WolverineAryan\n* REKRAFT:  https://rekraft.in',
+          text: 'GET IN TOUCH:\n\n* Email:    pranavthormise@gmail.com\n* LinkedIn: https://www.linkedin.com/in/pranav-thormise-332206283\n* GitHub:   https://github.com/WolverineAryan\n* Resume:   https://pranavthormiseportfolio-lovat.vercel.app/pranav_resume.pdf\n* REKRAFT:  https://rekraft.in',
           type: 'output'
         });
         break;

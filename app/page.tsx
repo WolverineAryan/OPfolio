@@ -393,6 +393,7 @@ export default function Home() {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#console">Console</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="/pranav_resume.pdf" download="Pranav_Thormise_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
         <a 
           href="mailto:pranavthormise@gmail.com" 
@@ -448,6 +449,16 @@ export default function Home() {
                 onMouseMove={handleButtonMouseMove}
               >
                 View Work
+              </a>
+              <a 
+                href="/pranav_resume.pdf" 
+                download="Pranav_Thormise_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
+                onMouseMove={handleButtonMouseMove}
+              >
+                Resume 💾
               </a>
               <a 
                 href="#contact" 
@@ -550,6 +561,7 @@ export default function Home() {
               <div className="about-links">
                 <a href="https://github.com/WolverineAryan" className="about-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 <a href="https://www.linkedin.com/in/pranav-thormise-332206283" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="/pranav_resume.pdf" download="Pranav_Thormise_Resume.pdf" target="_blank" rel="noopener noreferrer" className="about-link">Resume 💾</a>
                 <a href="mailto:pranavthormise@gmail.com" className="about-link">Email ↗</a>
               </div>
             </div>
