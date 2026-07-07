@@ -118,14 +118,34 @@ const projectsData = [
     name: "LEV-GRESS",
     type: "Web Platform",
     desc: "A dynamic web platform built with a focus on performance and user experience, delivering clean interactions and a polished interface.",
-    images: ["/projects/coming_soon.png"],
+    images: ["/projects/levgress.png",
+      "/projects/levgress (2).png",
+      "/projects/levgress (3).png",
+      "/projects/levgress (4).png",
+      "/projects/levgress (5).png",
+      "/projects/levgress (6).png",
+      "/projects/levgress (7).png",
+      "/projects/levgress (8).png",
+      "/projects/levgress (9).png",
+    ],
     inProgress: true,
     stack: ["React", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
-    
+    demo: "https://levgress.vercel.app/",
     git: "https://github.com/WolverineAryan/Levgress"
   },
   {
     num: "06",
+    name: "Solar-Flare Detection System",
+    type: "Mobile App",
+    desc: "A mobile application built with Kotlin connecting university students to clubs, events, and communities — all in one place.",
+    images: ["/projects/coming_soon.png"],
+    inProgress: true,
+    stack: ["Kotlin", "Jetpack Compose", "Firebase", "Cloudinary", "Android SDK"],
+    demo:"https://solarflaredetectionsystem.shreyashelar.tech/",
+    git: "https://github.com/WolverineAryan/Solar_Flare_Detection_System"
+  },
+  {
+    num: "07",
     name: "UNI-CLUBB",
     type: "Mobile App",
     desc: "A mobile application built with Kotlin connecting university students to clubs, events, and communities — all in one place.",
@@ -458,7 +478,7 @@ export default function Home() {
                 className="btn-outline"
                 onMouseMove={handleButtonMouseMove}
               >
-                Resume 💾
+                Resume
               </a>
               <a 
                 href="#contact" 
