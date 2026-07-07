@@ -43,7 +43,7 @@ const projectsData = [
     num: "01",
     name: "Rule_Zero",
     type: "AI Compliance",
-    desc: "An AI compliance pipeline ensuring systems operate within defined ethical and operational boundaries. Built for reliability and transparency.",
+    desc: "Built a full-stack platform that structures Indian laws and regulations into a searchable library, using AI to simplify legal language for citizens and startups.",
     images: [
       "/projects/rulezero_1.png",
       "/projects/rulezero_2.png",
@@ -52,7 +52,7 @@ const projectsData = [
       "/projects/rulezero_5.png",
       "/projects/rulezero_6.png"
     ],
-    stack: ["Next.js", "Prisma", "PostgreSQL", "Firebase", "Gemini API"],
+    stack: ["React", "Next.js", "Prisma", "PostgreSQL", "Firebase", "GROQ API"],
     demo: "https://rule-zero.vercel.app",
     git: "https://github.com/WolverineAryan/Rule_Zero"
   },
@@ -60,7 +60,7 @@ const projectsData = [
     num: "02",
     name: "Smotly_ai",
     type: "AI SaaS Platform",
-    desc: "A full AI SaaS platform with intelligent automation, user management, and scalable inference — designed for real production loads.",
+    desc: "Built an AI SaaS platform integrating LLM workflows with background task queues (Celery/Redis) and real-time streaming notifications over WebSockets.",
     images: [
       "/projects/Smotly_1.png",
       "/projects/Smotly_2.png",
@@ -74,7 +74,7 @@ const projectsData = [
       "/projects/Smotly_10.png",
       "/projects/Smotly_11.png"
     ],
-    stack: ["Next.js", "FastAPI", "PostgreSQL", "Celery", "Groq API"],
+    stack: ["FastAPI", "LangChain", "Celery", "Redis", "WebSockets", "GROQ API"],
     demo: "https://smotly-ai.vercel.app",
     git: "https://github.com/WolverineAryan/Smotly_ai"
   },
@@ -90,15 +90,15 @@ const projectsData = [
       "/projects/groundwater_4.png",
       "/projects/groundwater_5.png"
     ],
-    stack: ["React", "Express", "MongoDB", "FastAPI", "Leaflet GIS"],
+    stack: ["React", "Python", "Flask", "FastAPI", "Leaflet GIS"],
     demo: "#",
     git: "https://github.com/WolverineAryan/Ground_water_stewardship"
   },
   {
     num: "04",
-    name: "Attendance Prediction",
+    name: "Attendance Prediction System",
     type: "AI / ML System",
-    desc: "ML system that predicts student attendance patterns from historical data, helping institutions proactively address engagement issues.",
+    desc: "Developed an AI-driven analytics tool achieving 86–87% prediction accuracy on a 1,000+ record dataset, surfacing trend insights and answering user questions through an integrated AI assistant.",
     images: [
       "/projects/APS1.png",
       "/projects/APS2.png",
@@ -109,15 +109,15 @@ const projectsData = [
       "/projects/APS7.png",
       "/projects/APS8.png"
     ],
-    stack: ["React", "Flask", "Tailwind CSS", "Scikit-Learn", "Ollama"],
+    stack: ["React", "Vite", "Tailwind", "Python", "Ollama", "JWT"],
     demo: "https://attendance-prediction-l5rxmkb1n-wolverinearyans-projects.vercel.app/",
     git: "https://github.com/WolverineAryan/Attendance-Prediction"
   },
   {
     num: "05",
-    name: "LEV-GRESS",
+    name: "Levgress",
     type: "Web Platform",
-    desc: "A dynamic web platform built with a focus on performance and user experience, delivering clean interactions and a polished interface.",
+    desc: "Built a gamified student progress-tracking platform where students submit project milestones to earn XP and badges, and instructors review submissions with real-time feedback via Socket.io and AI-assisted grading through the Groq API.",
     images: ["/projects/levgress.png",
       "/projects/levgress (2).png",
       "/projects/levgress (3).png",
@@ -128,20 +128,18 @@ const projectsData = [
       "/projects/levgress (8).png",
       "/projects/levgress (9).png",
     ],
-    inProgress: true,
-    stack: ["React", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
+    stack: ["React", "Vite", "Node.js", "Express", "MongoDB", "Socket.io", "Firebase Auth", "GROQ API"],
     demo: "https://levgress.vercel.app/",
     git: "https://github.com/WolverineAryan/Levgress"
   },
   {
     num: "06",
     name: "Solar-Flare Detection System",
-    type: "Mobile App",
-    desc: "A mobile application built with Kotlin connecting university students to clubs, events, and communities — all in one place.",
+    type: "ML based System  ",
+    desc: "An end-to-end, production-ready Ground Segment processor and visualization dashboard designed to ingest, clean, and analyze real-time solar X-ray telemetry from the SoLEXS (Soft X-Ray) and HEL1OS (Hard X-Ray) instruments onboard ISRO's Aditya-L1 observatory.",
     images: ["/projects/coming_soon.png"],
-    inProgress: true,
     stack: ["Kotlin", "Jetpack Compose", "Firebase", "Cloudinary", "Android SDK"],
-    demo:"https://solarflaredetectionsystem.shreyashelar.tech/",
+    demo: "https://solarflaredetectionsystem.shreyashelar.tech/",
     git: "https://github.com/WolverineAryan/Solar_Flare_Detection_System"
   },
   {
@@ -172,7 +170,7 @@ export default function Home() {
   const [particles, setParticles] = useState<{ id: number; style: React.CSSProperties }[]>([]);
 
   // Story state
-  const [activeStory, setActiveStory] = useState('s2019');
+  const [activeStory, setActiveStory] = useState('s2024');
 
   const [windowHeight, setWindowHeight] = useState(800);
 
@@ -568,7 +566,7 @@ export default function Home() {
                 <span className="keyword-badge">AI-ML Explorer</span>
               </div>
               <p className="about-text">
-                I'm <strong>Pranav A. Thormise</strong>, a TE Computer Engineering student at PVGCOE, Nashik —
+                I'm <strong>Pranav Arvind Thormise</strong>, a B.E. Computer Engineering student at PVGCOE, Nashik —
                 a full-stack developer and UI/UX designer who builds things that <strong>feel alive</strong>.
               </p>
               <p className="about-text" style={{ marginTop: '1rem' }}>
@@ -581,7 +579,7 @@ export default function Home() {
               <div className="about-links">
                 <a href="https://github.com/WolverineAryan" className="about-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                 <a href="https://www.linkedin.com/in/pranav-thormise-332206283" className="about-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-                <a href="/pranav_resume.pdf" download="Pranav_Thormise_Resume.pdf" target="_blank" rel="noopener noreferrer" className="about-link">Resume 💾</a>
+                <a href="/pranav_resume.pdf" download="Pranav_Thormise_Resume.pdf" target="_blank" rel="noopener noreferrer" className="about-link">Resume</a>
                 <a href="mailto:pranavthormise@gmail.com" className="about-link">Email ↗</a>
               </div>
             </div>
@@ -596,7 +594,7 @@ export default function Home() {
               <div className="stat-desc">Projects Shipped</div>
             </div>
             <div className="stat-card">
-              <div className="stat-num">3</div>
+              <div className="stat-num">4</div>
               <div className="stat-desc">Roles Held</div>
             </div>
             <div className="stat-card">
@@ -614,39 +612,56 @@ export default function Home() {
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-year">2024 — Present</div>
-            <div className="timeline-role">General Manager &amp; Co-founder</div>
-            <div className="timeline-org">REKRAFT · rekraft.in</div>
-            <p className="timeline-desc">Co-founded a startup platform for buying and selling refurbished laptops. Led business strategy, product development, and team coordination to drive sustainable tech reuse.</p>
+            <div className="timeline-year">Jul 2026 — Present</div>
+            <div className="timeline-role">Full Stack Developer Intern</div>
+            <div className="timeline-org">Fortech Media &amp; Marketing Pvt. Ltd.</div>
+            <p className="timeline-desc">Built and shipped 2 enterprise websites for client companies, and currently developing CRM software solutions, taking features from requirement to production deployment.</p>
             <div className="timeline-tags">
-              <span className="tag">Leadership</span>
-              <span className="tag">Entrepreneurship</span>
-              <span className="tag">Product Strategy</span>
+              <span className="tag">Next.js</span>
+              <span className="tag">React</span>
+              <span className="tag">CRM Development</span>
+              <span className="tag">Full Stack</span>
             </div>
           </div>
 
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-year">2023 — 2024</div>
-            <div className="timeline-role">AI-ML Intern</div>
-            <div className="timeline-org">Technokraft</div>
-            <p className="timeline-desc">Built and evaluated machine learning models for real-world datasets. Handled end-to-end pipelines: data preprocessing, feature engineering, model training, and performance evaluation.</p>
+            <div className="timeline-year">Oct 2025 — Mar 2026</div>
+            <div className="timeline-role">Co-founder &amp; General Manager</div>
+            <div className="timeline-org">Rekraft (E-commerce Startup)</div>
+            <p className="timeline-desc">Led product strategy, UI/UX design, and business development for a refurbished-laptop e-commerce platform. Completed 60+ customer orders at a 15% profit margin, managing vendor sourcing, pricing, and customer acquisition end-to-end.</p>
+            <div className="timeline-tags">
+              <span className="tag">Product Strategy</span>
+              <span className="tag">UI/UX Design</span>
+              <span className="tag">Business Dev</span>
+              <span className="tag">Entrepreneurship</span>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-year">Jan 2026 — Feb 2026</div>
+            <div className="timeline-role">AI/ML Intern</div>
+            <div className="timeline-org">Technokraft Training &amp; Solutions Pvt. Ltd.</div>
+            <p className="timeline-desc">Built an AI prediction system achieving 86–87% accuracy on a 1,000+ record dataset, covering data preprocessing, feature engineering, and model optimization using Python.</p>
             <div className="timeline-tags">
               <span className="tag">Machine Learning</span>
-              <span className="tag">Data Science</span>
               <span className="tag">Python</span>
+              <span className="tag">Data Science</span>
+              <span className="tag">Model Tuning</span>
             </div>
           </div>
 
           <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-year">2023</div>
-            <div className="timeline-role">Secretary — Skill Up Club</div>
-            <div className="timeline-org">PVGCOE, Nashik</div>
-            <p className="timeline-desc">Organized impactful technical workshops, coordinated events, and mentored junior students to upskill in modern development practices and emerging technologies.</p>
+            <div className="timeline-year">2025 — 2026</div>
+            <div className="timeline-role">Secretary</div>
+            <div className="timeline-org">Skill Up Club, PVGCOE</div>
+            <p className="timeline-desc">Organized 5+ technical workshops and coding competitions for 100+ students. Mentored junior students in web development fundamentals and project building.</p>
             <div className="timeline-tags">
-              <span className="tag">Mentorship</span>
+              <span className="tag">Leadership</span>
               <span className="tag">Event Management</span>
+              <span className="tag">Mentorship</span>
               <span className="tag">Community</span>
             </div>
           </div>
@@ -749,34 +764,34 @@ export default function Home() {
           <div className="story-nav">
             <div className="story-nav-buttons">
               <button 
-                className={`story-nav-item ${activeStory === 's2019' ? 'active' : ''}`}
-                onClick={() => handleStoryNavClick('s2019')}
+                className={`story-nav-item ${activeStory === 's2024' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2024')}
               >
-                2019
-              </button>
-              <button 
-                className={`story-nav-item ${activeStory === 's2021' ? 'active' : ''}`}
-                onClick={() => handleStoryNavClick('s2021')}
-              >
-                2021
-              </button>
-              <button 
-                className={`story-nav-item ${activeStory === 's2022' ? 'active' : ''}`}
-                onClick={() => handleStoryNavClick('s2022')}
-              >
-                2022
+                2026 — Present
               </button>
               <button 
                 className={`story-nav-item ${activeStory === 's2023' ? 'active' : ''}`}
                 onClick={() => handleStoryNavClick('s2023')}
               >
+                2025
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2022' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2022')}
+              >
+                2024
+              </button>
+              <button 
+                className={`story-nav-item ${activeStory === 's2021' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2021')}
+              >
                 2023
               </button>
               <button 
-                className={`story-nav-item ${activeStory === 's2024' ? 'active' : ''}`}
-                onClick={() => handleStoryNavClick('s2024')}
+                className={`story-nav-item ${activeStory === 's2019' ? 'active' : ''}`}
+                onClick={() => handleStoryNavClick('s2019')}
               >
-                2024 — Now
+                2019
               </button>
             </div>
 
@@ -790,35 +805,35 @@ export default function Home() {
 
           {/* Cards */}
           <div className="story-cards">
-            <div className="story-card" id="s2019">
+            <div className="story-card" id="s2024">
               <div className="story-year-col">
-                <div className="story-year">2019</div>
+                <div className="story-year">2026</div>
                 <div className="story-connector"></div>
               </div>
               <div className="story-body">
-                <div className="story-phase">Chapter 01 · The Spark</div>
-                <div className="story-heading">10th Grade — Where It All Began</div>
-                <p className="story-text">Scored well in SSC boards and chose the Science stream — not because everyone did, but because computers had already started pulling me in. My first interaction with a computer wasn't just curiosity, it was a calling. I didn't know it yet, but the path was already forming.</p>
-                <span className="story-badge">SSC Boards · Science Stream Selected</span>
+                <div className="story-phase">Chapter 05 · Building for Real</div>
+                <div className="story-heading">Final Year BE — Founder, Engineer, Designer</div>
+                <p className="story-text">Co-founded REKRAFT (Oct 2025 – Mar 2026) — my first real venture. Simultaneously completed an AI/ML internship at Technokraft and served as Secretary of the Skill Up Club. Currently working as a Full Stack Developer Intern at Fortech Media &amp; Marketing, building enterprise platforms and CRM solutions while in my final year of B.E. Computer Engineering.</p>
+                <span className="story-badge">Co-founder · Full Stack Intern · B.E. Final Year</span>
               </div>
             </div>
 
-            <div className="story-card" id="s2021">
+            <div className="story-card" id="s2023">
               <div className="story-year-col">
-                <div className="story-year">2021</div>
+                <div className="story-year">2025</div>
                 <div className="story-connector"></div>
               </div>
               <div className="story-body">
-                <div className="story-phase">Chapter 02 · The Foundation</div>
-                <div className="story-heading">12th Grade — Choosing Engineering</div>
-                <p className="story-text">Complete HSC with a focus on Mathematics, Physics, and Computer Science. The JEE prep sharpened my logical thinking and problem-solving instincts in ways no classroom could. Made the decisive choice — Computer Engineering. Not just a degree, but a direction.</p>
-                <span className="story-badge">HSC Complete · Engineering Pathway Locked</span>
+                <div className="story-phase">Chapter 04 · Growing Fast</div>
+                <div className="story-heading">SE / TE — From Student to Builder</div>
+                <p className="story-text">Second and third year were transformative. Dove deep into the MERN stack, discovered UI/UX design, and started building real products — not just assignments. Focused on database engineering, building scalable frontend designs, and learning the fundamentals of AI integration. Every project taught me something assignments never could.</p>
+                <span className="story-badge">SE→TE · MERN Stack · Product Development</span>
               </div>
             </div>
 
             <div className="story-card" id="s2022">
               <div className="story-year-col">
-                <div className="story-year">2022</div>
+                <div className="story-year">2024</div>
                 <div className="story-connector"></div>
               </div>
               <div className="story-body">
@@ -829,29 +844,29 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="story-card" id="s2023">
+            <div className="story-card" id="s2021">
               <div className="story-year-col">
                 <div className="story-year">2023</div>
                 <div className="story-connector"></div>
               </div>
               <div className="story-body">
-                <div className="story-phase">Chapter 04 · Growing Fast</div>
-                <div className="story-heading">SE / TE — From Student to Builder</div>
-                <p className="story-text">Second and third year were transformative. Dove deep into the MERN stack, discovered UI/UX design, and started building real products — not just assignments. Became Secretary of the Skill Up Club, mentoring juniors and organizing workshops. Completed an AI-ML internship at Technokraft, handling full ML pipelines from scratch. Every project taught me something assignments never could.</p>
-                <span className="story-badge">SE→TE · Skill Up Club · AI Internship</span>
+                <div className="story-phase">Chapter 02 · The Foundation</div>
+                <div className="story-heading">12th Grade — Choosing Engineering</div>
+                <p className="story-text">Complete HSC with a focus on Mathematics, Physics, and Computer Science. The JEE prep sharpened my logical thinking and problem-solving instincts in ways no classroom could. Made the decisive choice — Computer Engineering. Not just a degree, but a direction.</p>
+                <span className="story-badge">HSC Complete · Engineering Pathway Locked</span>
               </div>
             </div>
 
-            <div className="story-card" id="s2024">
+            <div className="story-card" id="s2019">
               <div className="story-year-col">
-                <div className="story-year">2024</div>
+                <div className="story-year">2019</div>
                 <div className="story-connector"></div>
               </div>
               <div className="story-body">
-                <div className="story-phase">Chapter 05 · Building for Real</div>
-                <div className="story-heading">TE → Present — Founder, Engineer, Designer</div>
-                <p className="story-text">Co-founded REKRAFT, a refurbished laptop marketplace — my first real venture, real customers, real stakes. Simultaneously pushing deep into AI-ML, agentic systems, and product thinking. Currently in TE, with a final year ahead and a hunger to build things that genuinely matter. The story isn't over — it's just getting interesting.</p>
-                <span className="story-badge">Co-founder · REKRAFT · Agentic AI Explorer</span>
+                <div className="story-phase">Chapter 01 · The Spark</div>
+                <div className="story-heading">10th Grade — Where It All Began</div>
+                <p className="story-text">Scored well in SSC boards and chose the Science stream — not because everyone did, but because computers had already started pulling me in. My first interaction with a computer wasn't just curiosity, it was a calling. I didn't know it yet, but the path was already forming.</p>
+                <span className="story-badge">SSC Boards · Science Stream Selected</span>
               </div>
             </div>
           </div>

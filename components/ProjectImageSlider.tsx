@@ -36,7 +36,7 @@ export default function ProjectImageSlider({ images, name }: ProjectImageSliderP
             inset: 0,
             width: '100%',
             height: '100%',
-            objectFit: 'cover',
+            objectFit: 'contain',
             opacity: idx === currentIdx ? 1 : 0,
             transition: 'opacity 0.8s ease-in-out, transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)',
             pointerEvents: idx === currentIdx ? 'auto' : 'none',
