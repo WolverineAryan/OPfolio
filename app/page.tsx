@@ -406,7 +406,7 @@ export default function Home() {
           transition: 'opacity 0.15s ease, background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s',
         }}
       >
-        <a href="#hero-scroll-wrapper" className="nav-logo">P<span>.</span>AT</a>
+        <a href="#hero-scroll-wrapper" className="nav-logo">P<span>.</span>A<span>.</span>T</a>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
