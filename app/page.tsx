@@ -137,7 +137,10 @@ const projectsData = [
     name: "Solar-Flare Detection System",
     type: "ML based System  ",
     desc: "An end-to-end, production-ready Ground Segment processor and visualization dashboard designed to ingest, clean, and analyze real-time solar X-ray telemetry from the SoLEXS (Soft X-Ray) and HEL1OS (Hard X-Ray) instruments onboard ISRO's Aditya-L1 observatory.",
-    images: ["/projects/coming_soon.png"],
+    images: ["/projects/solar1.png",
+      "/projects/solar2.png",
+      "/projects/solar3.png",
+    ],
     stack: ["Kotlin", "Jetpack Compose", "Firebase", "Cloudinary", "Android SDK"],
     demo: "https://solarflaredetectionsystem.shreyashelar.tech/",
     git: "https://github.com/WolverineAryan/Solar_Flare_Detection_System"
