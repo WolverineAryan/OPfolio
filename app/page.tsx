@@ -460,7 +460,7 @@ export default function Home() {
               <span className="highlight">THORMISE</span>
             </h1>
             <p className="hero-subtitle">
-              MERN Stack developer crafting <span id="typewriter">{typewriterText}</span><br />
+              Full Stack developer crafting <span id="typewriter">{typewriterText}</span><br />
               — turning ideas into immersive, scalable digital experiences.
             </p>
             <div className="hero-actions">
@@ -506,7 +506,7 @@ export default function Home() {
             <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
             <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
-            <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item accent">Full Stack</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
             <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
@@ -517,7 +517,7 @@ export default function Home() {
             <span className="marquee-item">SDLC</span><span className="marquee-sep"></span>
             <span className="marquee-item accent">Scalable Apps</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">Agentic Engineer</span><span className="marquee-sep"></span>
-            <span className="marquee-item accent">MERN Stack</span><span className="marquee-sep dim"></span>
+            <span className="marquee-item accent">Full Stack</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">UI / UX Design</span><span className="marquee-sep"></span>
             <span className="marquee-item accent">AI · ML</span><span className="marquee-sep dim"></span>
             <span className="marquee-item">Full Stack Dev</span><span className="marquee-sep"></span>
@@ -829,8 +829,8 @@ export default function Home() {
               <div className="story-body">
                 <div className="story-phase">Chapter 04 · Growing Fast</div>
                 <div className="story-heading">SE / TE — From Student to Builder</div>
-                <p className="story-text">Second and third year were transformative. Dove deep into the MERN stack, discovered UI/UX design, and started building real products — not just assignments. Focused on database engineering, building scalable frontend designs, and learning the fundamentals of AI integration. Every project taught me something assignments never could.</p>
-                <span className="story-badge">SE→TE · MERN Stack · Product Development</span>
+                <p className="story-text">Second and third year were transformative. Dove deep into the Full stack, discovered UI/UX design, and started building real products — not just assignments. Focused on database engineering, building scalable frontend designs, and learning the fundamentals of AI integration. Every project taught me something assignments never could.</p>
+                <span className="story-badge">SE→TE · Full Stack · Product Development</span>
               </div>
             </div>
 
