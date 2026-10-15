@@ -6,8 +6,8 @@ const GREETINGS = [
   "Hey! I'm Pranav. Welcome! 👋",
   "Let's build something epic! 🚀",
   "I co-founded REKRAFT (rekraft.in)! ♻️",
-  "Full Stack Dev & UI/UX Designer! 💻",
-  "ML, React, Node, Android... I love it! 🛠️",
+  "Software Engineer & AI Engineer! 💻",
+  "ML, Distributed Systems, Python, Next.js! 🛠️",
   "Scroll down to see my projects! 📜",
   "Try typing commands in the console below! 🐚"
 ];

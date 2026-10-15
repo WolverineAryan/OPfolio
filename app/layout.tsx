@@ -23,11 +23,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pranav A. Thormise — Full Stack Developer & UI/UX Designer",
-  description: "Pranav A. Thormise — TE Computer Engineering student, full stack developer, UI/UX designer, and co-founder of REKRAFT. Building premium MERN stack, Kotlin, and AI applications.",
+  title: "Pranav A. Thormise — Software Engineer & AI Engineer",
+  description: "Pranav A. Thormise — B.E. Computer Engineering student, Software Engineer, AI Engineer, and co-founder of REKRAFT. Building scalable distributed systems, full-stack applications, and AI pipelines.",
   openGraph: {
-    title: "Pranav A. Thormise — Full Stack Developer & UI/UX Designer",
-    description: "Portfolio of Pranav A. Thormise. Crafting premium digital products with MERN Stack, Kotlin, and AI/ML.",
+    title: "Pranav A. Thormise — Software Engineer & AI Engineer",
+    description: "Portfolio of Pranav A. Thormise. Building scalable distributed systems, full-stack applications, and AI pipelines.",
     images: [
       {
         url: "/profile.jpg",
