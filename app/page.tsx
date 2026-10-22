@@ -44,7 +44,7 @@ const projectsData = [
     name: "TicketWala",
     type: "Distributed Systems & In-Memory Engine",
     desc: "A high-contention flash-reservation & seat inventory locking engine handling 10,800+ RPS and 50,000 concurrent virtual contenders with sub-30ms latency, zero double-bookings, and atomic Redis Lua scripts.",
-    images: ["/projects/coming_soon.png"],
+    images: ["/projects/ticket1.png", "/projects/ticket2.png", "/projects/ticket3.png", "/projects/ticket4.png", "/projects/ticket5.png"],
     stack: ["Next.js 15", "Fastify", "TypeScript", "Redis (Lua)", "PostgreSQL", "Docker", "k6"],
     demo: "https://ticketwala-eight.vercel.app",
     git: "https://github.com/WolverineAryan/TicketWala"
@@ -54,7 +54,7 @@ const projectsData = [
     name: "Roopantar-AI",
     type: "Enterprise GenAI Platform",
     desc: "A single-source Generative AI transformation engine that ingests multi-modal materials (PDFs, OCR scans, audio/video) and executes parallel single-pass intent extraction to deliver 8 schema-validated deliverables in ~10s across 12 languages.",
-    images: ["/projects/coming_soon.png"],
+    images: ["/projects/roopantar1.png", "/projects/roopantar2.png", "/projects/roopantar3.png", "/projects/roopantar4.png", "/projects/roopantar5.png"],
     stack: ["Next.js 14", "FastAPI", "Python", "Groq LPU", "TypeScript", "Tailwind CSS", "Docker"],
     demo: "https://roopantar-ai.vercel.app",
     git: "https://github.com/WolverineAryan/Roopantar-AI"
@@ -64,7 +64,7 @@ const projectsData = [
     name: "Testvita (CodeVita AI Coach)",
     type: "AI EdTech & Sandbox Compiler",
     desc: "An adaptive AI coach for competitive programming engineered for algorithmic assessments, featuring a Monaco IDE multi-language execution sandbox (C++, Python, Java), isolated subprocess grading, and Socratic AI hints.",
-    images: ["/projects/coming_soon.png"],
+    images: ["/projects/test1.png", "/projects/test2.png", "/projects/test3.png", "/projects/test4.png", "/projects/test5.png", "/projects/test6.png", "/projects/test7.png", "/projects/test8.png", "/projects/test9.png",],
     stack: ["Next.js 14", "FastAPI", "Python", "Monaco Editor", "PostgreSQL", "NVIDIA NIM", "Tailwind CSS"],
     demo: "https://testvita.vercel.app",
     git: "https://github.com/WolverineAryan/Testvita"
